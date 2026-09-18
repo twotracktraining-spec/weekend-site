@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tyler | Weekend Training &amp; PT</title>
+  <meta name="description" content="Weekend strength coaching and cash telehealth physical therapy. Two different services. North Carolina." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #16343f;
+      --ink: #1c1917;
+      --paper: #f6f1e8;
+      --card: #fffdf8;
+      --gold: #b0893e;
+      --teal: #2a6f7f;
+      --line: #e4ddd2;
+      --muted: #6b6258;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Instrument Sans", system-ui, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    a { color: var(--teal); }
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 22px; max-width: 1040px; margin: 0 auto;
+    }
+    .logo { font-weight: 700; letter-spacing: .02em; }
+    .logo span { color: var(--teal); font-weight: 500; }
+    nav a { margin-left: 18px; text-decoration: none; color: var(--ink); font-size: 14px; font-weight: 500; }
+    .hero {
+      max-width: 1040px; margin: 0 auto; padding: 28px 22px 12px;
+      display: grid; gap: 28px;
+    }
+    @media (min-width: 800px) {
+      .hero { grid-template-columns: 1.2fr .8fr; align-items: end; padding-top: 48px; }
+    }
+    h1 {
+      font-family: "Instrument Serif", Georgia, serif;
+      font-size: clamp(36px, 6vw, 64px);
+      line-height: 1.05; font-weight: 400;
+    }
+    .lede { margin-top: 16px; font-size: 18px; color: var(--muted); max-width: 36em; }
+    .badge {
+      display: inline-block; font-size: 12px; font-weight: 600;
+      letter-spacing: .08em; text-transform: uppercase;
+      color: var(--teal); margin-bottom: 12px;
+    }
+    .doors { display: grid; gap: 14px; }
+    .door {
+      background: var(--card); border: 1px solid var(--line);
+      border-radius: 16px; padding: 20px; text-decoration: none; color: inherit;
+      box-shadow: 0 8px 24px rgba(22,52,63,.05);
+    }
+    .door h2 { font-size: 20px; margin-bottom: 6px; }
+    .door p { color: var(--muted); font-size: 14px; }
+    .door.train { border-top: 4px solid var(--gold); }
+    .door.pt { border-top: 4px solid var(--teal); }
+    .price { font-weight: 700; margin-top: 10px; }
+    section { max-width: 1040px; margin: 0 auto; padding: 48px 22px; }
+    h3 { font-family: "Instrument Serif", Georgia, serif; font-size: 32px; font-weight: 400; margin-bottom: 16px; }
+    .grid-2 { display: grid; gap: 16px; }
+    @media (min-width: 720px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 22px; }
+    .card h4 { margin-bottom: 8px; }
+    .card ul { padding-left: 18px; color: var(--muted); }
+    .split { color: var(--muted); font-size: 14px; margin-top: 8px; }
+    form { display: grid; gap: 10px; }
+    input, select, textarea {
+      font: inherit; padding: 12px 12px; border: 1px solid var(--line);
+      border-radius: 10px; background: #fff;
+    }
+    button, .btn {
+      background: var(--navy); color: #fff; border: 0; border-radius: 999px;
+      padding: 12px 18px; font: inherit; font-weight: 600; cursor: pointer;
+      text-decoration: none; display: inline-block; text-align: center;
+    }
+    .fine { font-size: 12px; color: var(--muted); margin-top: 8px; }
+    footer { border-top: 1px solid var(--line); padding: 28px 22px; color: var(--muted); font-size: 13px; }
+    footer div { max-width: 1040px; margin: 0 auto; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">TYLER <span>Training + PT</span></div>
+    <nav>
+      <a href="#training">Training</a>
+      <a href="#pt">PT</a>
+      <a href="#book">Book</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div>
+      <div class="badge">Weekends only · North Carolina</div>
+      <h1>Get stronger on Saturday.<br />Keep your week.</h1>
+      <p class="lede">
+        Two separate services. Strength coaching for healthy adults who want a plan.
+        Cash telehealth physical therapy if you are hurt or recovering.
+        I will tell you which one you actually need.
+      </p>
+    </div>
+    <div class="doors">
+      <a class="door train" href="#training">
+        <h2>I want to train</h2>
+        <p>Written program + live weekend form check. Fitness, not medical care.</p>
+        <div class="price">8 weeks · $299</div>
+      </a>
+      <a class="door pt" href="#pt">
+        <h2>I need a PT</h2>
+        <p>Licensed physical therapy by video. Eval, plan, follow-ups.</p>
+        <div class="price">Eval $160 · Follow-up $95</div>
+      </a>
+    </div>
+  </div>
+
+  <section id="training">
+    <h3>Personal training pack</h3>
+    <div class="grid-2">
+      <div class="card">
+        <h4>What’s included</h4>
+        <ul>
+          <li>20-minute kickoff call</li>
+          <li>3-day gym program, updated every 2 weeks</li>
+          <li>One live form-check on Sat or Sun (15–20 min)</li>
+          <li>Async questions on weekdays</li>
+        </ul>
+        <p class="split">This is personal training. It is not physical therapy, diagnosis, or rehab.</p>
+      </div>
+      <div class="card">
+        <h4>Who it’s for</h4>
+        <ul>
+          <li>You can already train and want a plan</li>
+          <li>Desk job, parents, weekend gym people</li>
+          <li>Not for fresh injuries, post-op, numbness, or “fix my disc”</li>
+        </ul>
+        <p class="split">Pain or recent surgery → book PT instead.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pt">
+    <h3>Cash telehealth PT</h3>
+    <div class="grid-2">
+      <div class="card">
+        <h4>What’s included</h4>
+        <ul>
+          <li>Video exam and plan of care</li>
+          <li>Home program you can actually do</li>
+          <li>Follow-up visits to progress or clear you</li>
+        </ul>
+        <p class="split">Licensed physical therapy. You must be in a state I am licensed to treat (starting with North Carolina).</p>
+      </div>
+      <div class="card">
+        <h4>Limits of video</h4>
+        <ul>
+          <li>No hands-on treatment</li>
+          <li>If it is not safe on video, I send you in person</li>
+          <li>Not for facility residents of my weekday employer</li>
+        </ul>
+        <p class="split">Insurance is not billed. Cash only for now.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="book">
+    <h3>Book a 15-minute fit call</h3>
+    <div class="grid-2">
+      <div class="card">
+        <p>Tell me what you want. I will put you on training or PT — not both in the same pack.</p>
+        <form action="mailto:you@email.com" method="get" enctype="text/plain">
+          <input name="subject" type="hidden" value="Fit call request" />
+          <input required name="name" placeholder="Name" />
+          <input required type="email" name="email" placeholder="Email" />
+          <select name="service" required>
+            <option value="">I think I need…</option>
+            <option>Training pack</option>
+            <option>PT eval</option>
+            <option>Not sure — you decide</option>
+          </select>
+          <select name="when">
+            <option>Saturday morning</option>
+            <option>Saturday afternoon</option>
+            <option>Sunday</option>
+          </select>
+          <textarea name="body" rows="4" placeholder="What is going on? Injury or just training?"></textarea>
+          <button type="submit">Email me to book</button>
+          <p class="fine">Replace this form with your Calendly link when you have one. Until then this opens an email.</p>
+        </form>
+      </div>
+      <div class="card">
+        <h4>Hours</h4>
+        <p>Saturday 8:00–12:00<br />Sunday by request</p>
+        <h4 style="margin-top:16px">Where</h4>
+        <p>Training: anywhere (online coaching).<br />PT: client must be in North Carolina at the time of the visit.</p>
+        <h4 style="margin-top:16px">Not this practice</h4>
+        <p class="split">No PEDs, no “rehab packages” sold as training, no SNF patients from my day job.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      Weekend cash practice. Training and physical therapy are different services.
+      Not medical advice until you are an established PT patient.
+      Update the name, prices, email, and hours before you share this page.
+    </div>
+  </footer>
+</body>
+</html>
